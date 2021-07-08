@@ -46,4 +46,4 @@ const stmt = db.prepare(`INSERT INTO users
 
 users.forEach(el => stmt.run(el.name, el.surname, el.email, el.age))
 
-//db.close();
+db.close();
